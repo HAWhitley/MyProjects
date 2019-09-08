@@ -1,0 +1,31 @@
+void printPhrases(const Phrase filePhrases[], int length)
+{
+	//assigns strings to variables for easier reading
+	string guesses = "Guesses";
+	string textPhrase = "Phrases";
+	string stringUsed = "Used?";
+	string difficulties = "Difficulty";
+
+	//outputs headers for each column
+	cout << left << setw(11) << guesses << setw(51) << textPhrase;
+	cout << right << setw(10) << difficulties << setw(14) << stringUsed << endl;
+
+	//outputs each component of the array
+	for (int index = 0; index < length; index++)
+	{
+		//outputs amount of guesses required with corresponding phrases
+		cout << left << setw(10) << filePhrases[index].guessesRequired << 
+			" " << setw(50) << filePhrases[index].text << right << setw(10) <<
+			filePhrases[index].difficulty;
+
+		//outputs whether a phrase is used or not
+		if (filePhrases[index].isUsed)
+		{
+			cout << right << setw(15) << "used" << endl;
+		}
+		else
+		{
+			cout << right << setw(15) << "unused" << endl;
+		}
+	}
+}
