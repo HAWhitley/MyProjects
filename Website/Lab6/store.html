@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="invoice.php" method="get">
+      <h1>CSCI Online Store</h1>
+      <table width="50%">
+        <tr>
+          <td><img src="dell.jpeg" width="200px" /></td>
+          <td><img src="delllap.jpeg" /></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="dell[]" value="0" />$1234</td>
+          <td><input type="checkbox" name="dell[]" value="1" />$2345</td>
+        </tr>
+        <tr>
+          <td><img src="cd.jpeg" width="200px" /></td>
+          <td><img src="parts.jpeg" width="200px" /></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="dell[]" value="2" />$246</td>
+          <td><input type="checkbox" name="dell[]" value="3" />$79</td>
+        </tr>
+      </table>
+
+      <br />
+      <input type="submit" name="Checkout" value="Checkout" />
+    </form>
+  </body>
+</html>

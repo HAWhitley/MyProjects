@@ -1,0 +1,66 @@
+.nav2 a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+ul {
+  background-color: gray;
+  padding: 15px;
+}
+
+.nav2 li {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.nav2 li:hover {
+  background-color: red;
+  padding: 15px;
+}
+
+.nav2 ul li ul {
+  visibility: hidden;
+  position: absolute;
+  display: none;
+}
+
+.nav2 ul li:hover ul {
+  position: absolute;
+  visibility: visible;
+  display: block;
+  width: 150px;
+  left: 135px;
+  top: 240px;
+  padding: 0px;
+}
+
+.nav2 ul li:hover ul li {
+  visibility: visible;
+  display: block;
+}
+
+.first-level {
+  list-style-type: upper-roman;
+}
+
+.second-level {
+  list-style-type: upper-alpha;
+}
+
+.third-level {
+  list-style-type: arabic-indic;
+}
+
+.compact {
+  background-color: pink;
+}
+
+.midsize {
+  background-color: blue;
+}
+
+.sports {
+  background-color: red;
+}

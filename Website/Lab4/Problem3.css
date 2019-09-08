@@ -1,0 +1,59 @@
+.nav2 a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+ul {
+  background-color: gray;
+  padding: 15px;
+}
+
+li {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+li:hover {
+  background-color: red;
+  padding: 15px;
+}
+
+ul li ul {
+  visibility: hidden;
+  position: absolute;
+  display: none;
+}
+
+ul li:hover ul {
+  position: absolute;
+  visibility: visible;
+  display: block;
+  width: 150px;
+  left: 135px;
+  top: 240px;
+  padding: 0px;
+}
+
+ul li:hover ul li {
+  visibility: visible;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+  background-color: #aeaeae;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
