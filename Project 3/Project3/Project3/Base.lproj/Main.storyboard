@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notecard.png" translatesAutoresizingMaskIntoConstraints="NO" id="knx-Ve-gcL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caf-be-00R">
+                                <rect key="frame" x="174" y="95" width="66.5" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3O2-XU-vDv">
+                                <rect key="frame" x="149" y="761" width="116" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Definition"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="G0Q-k3-LqV" kind="presentation" id="mLF-JP-7v9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="caf-be-00R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="0gf-MD-HJg"/>
+                            <constraint firstAttribute="bottom" secondItem="knx-Ve-gcL" secondAttribute="bottom" id="1lf-qq-oGc"/>
+                            <constraint firstItem="knx-Ve-gcL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9Ar-Qh-3Ro"/>
+                            <constraint firstItem="knx-Ve-gcL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J9a-62-n8T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3O2-XU-vDv" secondAttribute="bottom" constant="55" id="UsG-95-zcm"/>
+                            <constraint firstItem="caf-be-00R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WCY-2X-C3O"/>
+                            <constraint firstItem="knx-Ve-gcL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="b6P-2d-KlI"/>
+                            <constraint firstItem="3O2-XU-vDv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s4j-XA-Fq9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="vocab" destination="caf-be-00R" id="oWD-sW-cHk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65.217391304347828" y="95.758928571428569"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="5Ub-2v-TZA">
+            <objects>
+                <viewController id="G0Q-k3-LqV" customClass="ViewController2" customModule="Project3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="btc-8e-RgL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Notecard.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Rt-0N-8Db">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf5-Eg-wLQ">
+                                <rect key="frame" x="186" y="405" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3UW-Qu-tfr">
+                                <rect key="frame" x="142" y="762" width="130" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="New Word"/>
+                                <connections>
+                                    <segue destination="INw-7O-466" kind="unwind" unwindAction="returnedWithSegue:" id="DcU-4F-JCo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlJ-8J-fA9">
+                                <rect key="frame" x="7" y="92" width="400" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="2Un-gr-pBD"/>
+                                    <constraint firstAttribute="height" constant="200" id="6h3-tM-qPN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hlJ-8J-fA9" firstAttribute="centerX" secondItem="btc-8e-RgL" secondAttribute="centerX" id="4BQ-TQ-fe5"/>
+                            <constraint firstItem="hlJ-8J-fA9" firstAttribute="top" secondItem="Qr6-SI-k36" secondAttribute="top" constant="48" id="V4F-Bo-jRZ"/>
+                            <constraint firstItem="Qr6-SI-k36" firstAttribute="bottom" secondItem="3UW-Qu-tfr" secondAttribute="bottom" constant="53" id="XxI-iU-zqP"/>
+                            <constraint firstItem="3UW-Qu-tfr" firstAttribute="centerX" secondItem="btc-8e-RgL" secondAttribute="centerX" id="rQ9-xv-tpM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qr6-SI-k36"/>
+                    </view>
+                    <connections>
+                        <outlet property="definition" destination="hlJ-8J-fA9" id="Evz-VT-eeM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zxt-Yz-fwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="INw-7O-466" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="640.57971014492762" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Notecard.png" width="290" height="174"/>
+    </resources>
+</document>
