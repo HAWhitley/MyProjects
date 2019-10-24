@@ -1,0 +1,84 @@
+******************* PART 1 CardValidatorTest 34 testcases *********************
+JUnit version 4.12
+.checkNum - 4 (Discover) w/valid card num
+.checkType_String2 - Visa
+.checkType_string3 - American Express
+.checkType_String4 - Discover
+.checkNum11 - 4 (Discover) w/invalid card num 1st digit
+.checkNum12 - 3 (MasterCard) w/invalid card num 1st digit
+.checkNum13 - 2 (Visa) w/invalid card num 1st digit
+.checkNum14 - 1 (American Express) w/invalid card num 1st digit
+.checkNum15 - string= discover w/invalid card num 1st digit
+.checkNum16 - string= mastercard w/invalid card num 1st digit
+.checkNum17 - string= Visa w/invalid card num 1st digit
+.checkNum21 - 4 (Discover) w/invalid card num invalid length 
+.checkNum22 - 3 (MasterCard) w/invalid card num invalid length
+.checkNum23 - 2 (Visa) w/invalid card num invalid length
+.checkNum24 - 1 (American Express) w/invalid card num invalid length
+.checkNum25 - string= discover w/invalid card num invalid length
+.checkNum26 - string= mastercard w/invalid card num invalid length
+.checkNum27 - string= Visa w/invalid card num invalid length
+.checkType - valid entry between 1-4
+.getAttempts2 - one attempt made, should return 1
+.checkTypestring54 - verify exception thrown when attempts exceed 2
+.checkNum2 - 3 (MasterCard) w/valid card num
+.checkNum3 - 2 (Visa) w/valid card num
+.checkNum4 - 1 (American Express) w/valid card num
+.checkNum5 - string= discover w/valid card num
+.checkNum6 - string= mastercard w/valid card num
+.checkNum7 - string= Visa w/valid card num
+.checkType_int2 - invalid entry value of 8
+.checkType_int3 - verify num attempts incremented
+.checkType_int4 - verify exception thrown when attempts exceed 2
+.checkType_int7 - verify exception thrown when attempts exceed 2, across all methods
+.checkType_String - MasterCard
+.getAttempts - no attempts made should return 0
+
+Time: 0.015
+
+OK (33 tests)
+
++ 65.000 pts of 65.000
+Total grade so far: 65.000
+******************* PART 2 AddressVerificationTest - 18 testcases *********************
+JUnit version 4.12
+.checkStateZip2 - (invalid) 30301
+InvalidAddressException thrown/caught appropriately.
+.checkStateZip3 - (invalid) GA
+InvalidAddressException thrown/caught appropriately.
+.checkStateZip4 - (invalid)Georgia 30301
+InvalidAddressException thrown/caught appropriately.
+.checkCity - (invalid) W
+InvalidAddressException thrown/caught appropriately.
+.validateAddress - (valid) 123 OldBirch Lane, Wren, SC 29673
+.checkFormat - (valid) 123 OldBirch, Wren, SC 29673
+.checkStreetAdd - (invalid) OldBirch
+InvalidAddressException thrown/caught appropriately.
+.checkStreetAdd - (invalid) Old Birch
+InvalidAddressException thrown/caught appropriately.
+.checkStreetAdd - (invalid) 123 B
+InvalidAddressException thrown/caught appropriately.
+.checkStreetAdd - (valid) 123 OldBirch
+.checkFormat - (invalid) 123 OldBirch, Wren
+InvalidAddressException thrown/caught appropriately.
+.checkFormat - (invalid) 123 OldBirch, Wren, SC, 29673
+InvalidAddressException thrown/caught appropriately.
+.validateAddress - (invalid) 123 OldBirch Lane, 29673
+You have entered an invalid address, goodbye.
+.validateAddress - (invalid) OldBirch, Wren, SC, 29673
+You have entered an invalid address, goodbye.
+.validateAddress - (invalid) 123 OldBirch, W, SC 29673
+You have entered an invalid city, goodbye.
+.validateAddress - (invalid) 123 OldBirch, Wren, 29673
+You have entered an invalid state, goodbye.
+.checkCity - (valid) Wren
+.checkStateZip - (valid) GA 30301
+
+Time: 0.03
+
+OK (18 tests)
+
++ 35.000 pts of 35.000
+Total grade so far: 100.000
+Auto-grader grade: 100.000
+*****************Finished lab07****************
